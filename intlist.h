@@ -30,13 +30,14 @@ public:
 private:
 
     // (Optional) You can add some private helper functions here.
+    
 
     // definition of Node structure (DO NOT CHANGE):
     struct Node {
         int info;
         Node* next;
     };
-
+    static void clear_nodes(Node *first);
     Node* head; // pointer to head node
     Node* tail; // pointer to the tail node
 };

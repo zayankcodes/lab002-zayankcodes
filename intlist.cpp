@@ -7,15 +7,15 @@
 using std::cout;
 
 
-void IntList::clear_nodes(Node* first)
+
+void IntList::clear_nodes(IntList::Node* first)         
 {
     while (first) {
-        Node* tmp = first->next;
+        IntList::Node* tmp = first->next;               
         delete first;
         first = tmp;
     }
 }
-
 
 IntList::IntList() : head(nullptr), tail(nullptr) { }
 
